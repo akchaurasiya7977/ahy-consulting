@@ -1,256 +1,174 @@
   
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Professional Consulting Services - Helping You Achieve Success">
+        <title>Consulting Services</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f9;
+            }
+            header {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            nav {
+                display: flex;
+                justify-content: center;
+                background-color: #444;
+            }
+            nav a {
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+            nav a:hover {
+                background-color: #ddd;
+                color: #333;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .services, .testimonials, .contact-form {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .service, .testimonial, .form-group {
+                flex: 1;
+                min-width: 300px;
+                padding: 20px;
+                background-color: white;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+            }
+            .service h3, .testimonial h3 {
+                color: #333;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            form input, form textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            form button {
+                background-color: #333;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+            }
+            form button:hover {
+                background-color: #555;
+            }
+        </style>
+    </head>
+    <body>
     
-    <title>Jayesh Services</title>
-    <style>
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fafafa;
-            color: #333;
-        }
-
-        
-        .hero {
-            position: relative;
-            background-image: url('https://via.placeholder.com/1600x900'); 
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            filter: blur(10px);
-            -webkit-filter: blur(10px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            z-index: 1;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-        }
-
-        .hero h1 {
-            font-size: 3em;
-            margin: 0;
-            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            margin: 10px 0;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-        }
-
-        
-        .container {
-            width: 80%;
-            margin: 40px auto;
-        }
-
-        
-        h2 {
-            text-align: center;
-            color: #444;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .service-item {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 280px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .service-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .service-item h3 {
-            color: #333;
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-
-        .service-item p {
-            color: #777;
-            font-size: 1em;
-        }
-
-        
-        .testimonials {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .testimonial-item {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 280px;
-            text-align: center;
-            font-style: italic;
-        }
-
-        .testimonial-item blockquote {
-            color: #555;
-            font-size: 1.2em;
-            margin: 0;
-        }
-
-        .testimonial-item cite {
-            display: block;
-            margin-top: 10px;
-            font-size: 1em;
-            color: #333;
-        }
-
-        
-        .contact-form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: 40px auto;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-
-        .contact-form button {
-            padding: 12px 20px;
-            border: none;
-            background-color: #333;
-            color: white;
-            font-size: 1.1em;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .contact-form button:hover {
-            background-color: #555;
-        }
-
-      
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-    </style>
-</head>
-
-<body>
-
+    <!-- Header Section -->
+    <header>
+        <h1>Consulting Services</h1>
+        <p>Your trusted partner for professional advice and solutions</p>
+    </header>
     
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Jayesh Services</h1>
-            <p>Your Trusted Partner for Quality and Reliable Solutions</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <!-- Home Section -->
+    <section id="home" class="container">
+        <h2>Welcome to Our Consulting Services</h2>
+        <p>We provide expert consulting services to help businesses grow, streamline operations, and reach their goals. Whether you're a small business or a large enterprise, we have the knowledge and experience to guide you through any challenge.</p>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>We are a team of experienced consultants with a passion for helping businesses thrive. Our approach is data-driven, client-focused, and designed to deliver results. With years of experience across industries, we provide tailored solutions that meet the unique needs of each client.</p>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Business Strategy</h3>
+                <p>We help businesses develop and implement strategies to optimize performance and achieve growth. Whether you're looking to enter new markets or improve existing operations, we can guide your efforts.</p>
+            </div>
+            <div class="service">
+                <h3>Management Consulting</h3>
+                <p>Our team works with business leaders to assess challenges, improve processes, and implement sustainable management solutions. We help your organization run more efficiently and effectively.</p>
+            </div>
+            <div class="service">
+                <h3>Financial Planning</h3>
+                <p>We offer financial advisory services to help businesses manage cash flow, plan for future growth, and create sustainable financial strategies that drive profitability.</p>
+            </div>
         </div>
-    </div>
-
+    </section>
     
-    <div class="container">
-
-        
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="services">
-                <div class="service-item">
-                    <h3>Service 1</h3>
-                    <p>We offer top-quality service that meets your needs, with attention to detail and efficiency.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Service 2</h3>
-                    <p>Our expert team ensures that you receive the best care and professional solutions for all your needs.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Service 3</h3>
-                    <p>Affordable, reliable, and tailored services to help you stay ahead in your business or personal goals.</p>
-                </div>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <h3>Jane Doe, CEO of XYZ Corp.</h3>
+                <p>"The consulting team helped us identify key operational inefficiencies and implement strategies that boosted our bottom line. Their insights were invaluable!"</p>
             </div>
-        </section>
-
-        
-        <section id="testimonials">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonials">
-                <div class="testimonial-item">
-                    <blockquote>"Jayesh's service was excellent! Highly professional and delivered on time. Highly recommended!"</blockquote>
-                    <cite>- Client A</cite>
-                </div>
-                <div class="testimonial-item">
-                    <blockquote>"Amazing service. Friendly, approachable, and exceeded our expectations!"</blockquote>
-                    <cite>- Client B</cite>
-                </div>
-                <div class="testimonial-item">
-                    <blockquote>"I trust Jayesh for all my needs. Quality work, delivered with care!"</blockquote>
-                    <cite>- Client C</cite>
-                </div>
+            <div class="testimonial">
+                <h3>John Smith, Founder of ABC Ltd.</h3>
+                <p>"We reached new heights thanks to their strategic advice and financial planning. They truly understand the challenges small businesses face."</p>
             </div>
-        </section>
-
-        
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <div class="contact-form">
-                <form action="submit_form.php" method="POST">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your name">
-                    
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your email">
-                    
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
-                    
-                    <button type="submit">Send Message</button>
-                </form>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>Ready to take your business to the next level? Reach out today for a consultation!</p>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
             </div>
-        </section>
-
-    </div>
-
-
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Jayesh's Service. All Rights Reserved.</p>
+        <p>&copy; 2024 Consulting Services. All rights reserved.</p>
     </footer>
-
-</body>
-
-</html>
+    
+    </body>
+    </html>
+    
