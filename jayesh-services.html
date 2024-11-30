@@ -1,11 +1,256 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Jayesh Services</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        
+        .hero {
+            position: relative;
+            background-image: url('https://via.placeholder.com/1600x900'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            filter: blur(10px);
+            -webkit-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            z-index: 1;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        
+        .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        
+        h2 {
+            text-align: center;
+            color: #444;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .service-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-item h3 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .service-item p {
+            color: #777;
+            font-size: 1em;
+        }
+
+        
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .testimonial-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .testimonial-item blockquote {
+            color: #555;
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .testimonial-item cite {
+            display: block;
+            margin-top: 10px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            padding: 12px 20px;
+            border: none;
+            background-color: #333;
+            color: white;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+      
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Jayesh Services</h1>
+            <p>Your Trusted Partner for Quality and Reliable Solutions</p>
+        </div>
+    </div>
+
+    
+    <div class="container">
+
+        
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-item">
+                    <h3>Service 1</h3>
+                    <p>We offer top-quality service that meets your needs, with attention to detail and efficiency.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Service 2</h3>
+                    <p>Our expert team ensures that you receive the best care and professional solutions for all your needs.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Service 3</h3>
+                    <p>Affordable, reliable, and tailored services to help you stay ahead in your business or personal goals.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials">
+                <div class="testimonial-item">
+                    <blockquote>"Jayesh's service was excellent! Highly professional and delivered on time. Highly recommended!"</blockquote>
+                    <cite>- Client A</cite>
+                </div>
+                <div class="testimonial-item">
+                    <blockquote>"Amazing service. Friendly, approachable, and exceeded our expectations!"</blockquote>
+                    <cite>- Client B</cite>
+                </div>
+                <div class="testimonial-item">
+                    <blockquote>"I trust Jayesh for all my needs. Quality work, delivered with care!"</blockquote>
+                    <cite>- Client C</cite>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Jayesh's Service. All Rights Reserved.</p>
+    </footer>
+
 </body>
+
 </html>
